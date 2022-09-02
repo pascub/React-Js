@@ -63,3 +63,8 @@
 .diiv {
   padding-left:16px
 }
+.icono {
+  height: 50px;
+  width: 50px;
+  float: right;
+}

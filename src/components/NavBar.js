@@ -1,17 +1,20 @@
-import logo from '../logo.svg'
+
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
 
     return (
     <div>
-        
-        <div class="topnav">
+
+       
+        <div className="topnav">
+        <CartWidget/>
             <a class="active" href="#home">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
         </div>
-        <div class="diiv">
+        <div className="diiv">
             <h2>Greenpots</h2>
         </div>  
     
