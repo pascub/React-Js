@@ -7,12 +7,12 @@ import ItemCount from './components/ItemCount';
 function App() {
   return (
     <div className="App">
+      
       <NavBar/>
       
-      <ItemListContainer greeting={"Bienvenido"}/>
-      
-      
       <header className="App-header">
+      
+      <ItemListContainer greeting={"Bienvenido"}/>
         
       </header>
     </div>
