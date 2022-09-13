@@ -1,5 +1,5 @@
 
-const Item = (title, price, image) => {
+const Item = ({title, price, image}) => {
   return (
     <div>
         <img width={'200px'} src={image} alt={title}/>
