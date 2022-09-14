@@ -23,7 +23,7 @@ const getProducts =  new Promise ((resolve, reject) => {
     return (
       <div>
       <ItemList lista={productList}/>
-      <ItemCount/>
+      {/* <ItemCount/> */}
       </div>
    )
   }

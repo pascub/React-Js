@@ -1,13 +1,14 @@
 const data = [
     {
         id:'1',
-        title:'Circular elegan',
+        title:'Circular elegan gris',
         price: 2000,
         image:'https://img.freepik.com/vector-gratis/dos-macetas-plantas_1308-33555.jpg?w=2000',
+        detail:'Maceta artesanal de ceramico pintada a mano'
     },
     {
         id:'2',
-        title:'Circular elegan',
+        title:'Circular elegan blanca',
         price: 2000,
         image:'https://img.freepik.com/vector-gratis/dos-macetas-plantas_1308-33555.jpg?w=2000',
     },
