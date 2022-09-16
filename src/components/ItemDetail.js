@@ -1,19 +1,17 @@
+
+import data from "./MockData";
 import Item from "./Item"
 
-const ItemDetail = ({ item }) => {
+ export const ItemDetail = ({ product }) => {
+  console.log(product);
   return (
     <div>
-        {item.map((product) => (
-            <Item
-            key={product.id}
-            title={product.title}
-            price={product.price}
-            image={product.image}
-            detail={product.detail}
-            />
-        ))
-        
-        }
+       <img  src={product.img}/>
+       <h2>{product.title}</h2>
+       <div>
+        <p>{product.price}</p>
+        <p>{product.detail}</p>
+       </div>
     </div>
   )
 }

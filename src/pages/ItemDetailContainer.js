@@ -1,8 +1,10 @@
-import data from "./MockData"
+import data from "../components/MockData"
 import { useEffect, useState } from "react"
-import ItemDetail from "./ItemDetail"
+import ItemDetail from "../components/ItemDetail"
+import { useParams } from "react-router-dom"
 
 const ItemDetailContainer = () => {
+    const { id } = useParams();
     const [productItem, setProductItem] = useState([])
 
     useEffect(() => {
@@ -14,18 +16,16 @@ const ItemDetailContainer = () => {
 
       const getItem = new Promise ((resolve, reject) => {
         setTimeout(()=>{
-            resolve(data)
+            resolve(data.filter((product) => product.id === id))
         }, 2000)
 
       })
-
-
-
+ 
 
 
   return (
     <div>
-        <ItemDetail  item={productItem}/>
+        {productItem && <ItemDetail  product={productItem}/>}
     </div>
   )
 }
