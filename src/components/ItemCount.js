@@ -1,24 +1,23 @@
-import { useState } from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({setCount, count}) => {
 
-    const [initialState, setInitialState] = useState(0);
 
-    const suma = () => {
-        setInitialState(initialState + 1);
+    const onAdd = () => {
+       setCount(count + 1);
     };
-
-    const resta = () => {
-        setInitialState(initialState -1 );
-       
-    }
+    const onRemove = () => {
+      if (count === 0) {
+        return;
+      }
+      setCount(count - 1);
+   };
 
 
   return (
     <div>
-        <h3>{initialState}</h3>
-        <button onClick={suma}> SUMA </button>
-        <button onClick={resta}> RESTA </button> 
+       <p>{count}</p>
+        <button onClick={onAdd}> + </button> 
+        <button onClick={onRemove}> - </button> 
     </div>
   )
 }

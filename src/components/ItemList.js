@@ -10,7 +10,7 @@ const ItemList = ({ lista }) => {
 
               <Link
               key={product.id}
-              to={`/details/${product.id}`}
+              to={`/detail/${product.id}`}
               style={{ textDecoration: 'none'}}
 
           
@@ -19,8 +19,9 @@ const ItemList = ({ lista }) => {
                 
                 title={product.title}
                 price={product.price} 
+                category={product.category}
                 image={product.image}
-                detail={product.detail}
+                description={product.description}
                 />
           </Link>
                 

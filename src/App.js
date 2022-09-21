@@ -15,9 +15,9 @@ function App() {
       <header className="App-header">
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<ItemListContainer greeting={"Bienvenido"}/>}/> 
-            <Route path="contact" element={<div>contact</div>}/>
-            <Route path='detail/:id' element={<ItemDetailContainer />}/>
+            <Route path='/' element={<ItemListContainer/>}/> 
+            <Route path="/contact" element={<div>contact</div>}/>
+            <Route path='/detail/:id' element={<ItemDetailContainer/>}/>
           </Routes>
         </BrowserRouter>
         

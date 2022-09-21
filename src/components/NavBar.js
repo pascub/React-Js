@@ -14,7 +14,7 @@ const NavBar = () => {
             <a href="#contact">Contact</a>
             {/* <li>
                 <NavLink to={'/contact'}>
-
+                Contact
                 </NavLink>
             </li> */}
             <a href="#about">About</a>
