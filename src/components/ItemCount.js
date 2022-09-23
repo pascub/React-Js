@@ -1,8 +1,9 @@
 
-const ItemCount = ({setCount, count}) => {
+const ItemCount = ({stock, setCount, count}) => {
 
 
     const onAdd = () => {
+      if (count < stock)
        setCount(count + 1);
     };
     const onRemove = () => {
