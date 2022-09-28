@@ -2,6 +2,7 @@ import ItemCount from "../components/ItemCount";
 import data from "../components/MockData";
 import { useEffect, useState } from "react";
 import ItemList from "../components/ItemList";
+import { Link } from "react-router-dom";
 
 const ItemListContainer = () => {
   const [productList, setProductList] = useState([])
@@ -22,6 +23,7 @@ const getProducts =  new Promise ((resolve, reject) => {
 
     return (
       <div>
+        <Link to="/cart">Carrito</Link>
       <ItemList lista={productList}/>
       </div>
    )
